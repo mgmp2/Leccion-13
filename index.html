@@ -4,9 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Mi Leccion-13</title>
 </head>
 <body>
+
+  <h1 align="center">Formulario de datos </h1>
+    <section>
+      <form action="" align="center">
+        <div >
+          <label for="nombre">Nombre</label><br>
+          <input type="text" id="nombre" required>
+        </div><br>
+        <div >
+          <label for="apellido">Apellido</label><br>
+          <input type="text" id="apellido" required>
+        </div><br>
+        <div>
+          <label for="telf">Telefono</label><br>
+          <input type="text" id="telf" name="telf" pattern="^[9]\d{8}$" required>
+        </div><br>
+        <div >
+          <label for="nombre">Escoge tu carro para continuar</label><br>
+
+          <select>
+            <option value="" disabled selected>Escoge tu caro </option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+
+    		</div>
+        <div >
+          <label for="correo">Email</label><br>
+          <input type="email" name="correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="correo" required>
+        </div><br>
+        <div >
+          <p>
+            <label for="psw">Crea tu contraseña </label><br>
+            <input type="password" name="psw" pattern=".{6,}" title="6 a más caracteres " required>
+          </p>
+        </div><br>
+        <button type="submit" >Send</button>
+      </form>
+    </section>
+
+
 
 </body>
 </html>
